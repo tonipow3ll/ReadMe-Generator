@@ -27,7 +27,7 @@ If it does not work, right-click Inspect console to determine if there is an err
 
 # Licenses
 ### Copyright (c) ${answers.year} ${answers.contributors}
-### ${answers.choices}
+### ${answers.license}
 `
 
 inquirer
@@ -83,7 +83,7 @@ inquirer
             message: 'what is the current year, or year this was created?'
         },
         {
-            type: 'checkbox',
+            type: 'list',
             message: 'please choose a license for this project',
             name: 'license',
             choices: ['Apache License 2.0', 'GNU General Public License', 'MIT License', 'BSD 2-Clause "Simplified LIcense', 'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Create Commons Zero v1.0 Universal', 'Eclipse Public License', 'GNU Affero GEneral Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public LIcense v2.1', 'Mozilla Public License 2.0', 'The Unlicense']
