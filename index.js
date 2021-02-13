@@ -6,21 +6,38 @@ const createReadMe = (answers) =>
 ### ${answers.description}
 # ![ScreenShot](${answers.link})
 # [View the Deployed Application Here](${answers.deployed})
+
+# Table of Contents
+### [Installation](#Installation)
+### [Technologies](#Technologies)
+### [Testing](#Testing)
+### [Contributors](#Contributors)
+### [Contact](#Contact)
+### [Licenses](#Licenses)
+
+
+# Installation 
+### Clone repository to your local device
+### Test by opening the index.html file in your browser. If it looks good, it's working right.
+### If it does not work, right-click Inspect console to determine if there is an error. 
+
+# Technologies
 ### ${answers.technologies}
 
-# Installation
-Clone repository to your local device
-Test by opening the index.html file in your browser. If it looks good, it's working right.
-If it does not work, right-click Inspect console to determine if there is an error. 
+# Testing
+### ${answers.testing}
+
+# Usage
+### This application was created by ${answers.contributors}. Feel free to reach out via [email](#email) or open up a GitHub issue, or pull request if there is something you would like to add. 
 
 # Credits
-### UNH Full Stack Development Bootcamp
+### ${answers.credits}
 
 # Contributors
 ### ${answers.contributors}
 
 
-# Further Questions / Contact:
+# Contact:
 ### [LinkedIn](${answers.linkedin})
 ### [Email](${answers.email})
 ### [GitHub](${answers.github}.github.io)
@@ -29,6 +46,17 @@ If it does not work, right-click Inspect console to determine if there is an err
 ### Copyright (c) ${answers.year} ${answers.contributors}
 ### ${answers.license}
 `
+
+// function renderLicenseBadge(license) {
+//     switch (license)
+//     {
+//         case Apache:
+//     
+//             break;
+
+//     }
+    
+// }
 
 inquirer
     .prompt([
@@ -61,6 +89,16 @@ inquirer
             type: 'input',
             name: 'contributors',
             message: 'list contributors (if any) that may have helped with this applications development. If none - please enter your name. '
+        },
+        {
+            type: 'input',
+            name: 'testing',
+            message: 'any special notes on testing you would like to add? If not, hit enter to leave blank. '
+        },
+        {
+            type: 'input',
+            name: 'credits',
+            message: 'please list any additonal credits here '
         },
         {
             type: 'input',
