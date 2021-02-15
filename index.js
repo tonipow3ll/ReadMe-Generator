@@ -121,7 +121,7 @@ inquirer
             type: 'list',
             message: 'please choose a license for this project',
             name: 'license',
-            choices: ['Apache License 2.0', 'GNU General Public License', 'MIT License', 'BSD 2-Clause "Simplified License', 'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Create Commons Zero v1.0 Universal', 'Eclipse Public License', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public LIcense v2.1', 'Mozilla Public License 2.0', 'The Unlicense']
+            choices: ['Apache License 2.0', 'GNU General Public License', 'MIT License', 'BSD 2-Clause Simplified License', 'BSD 3-Clause New / Revised License', 'Boost Software License 1.0', 'Create Commons Zero v1.0 Universal', 'Eclipse Public License', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public LIcense v2.1', 'Mozilla Public License 2.0', 'The Unlicense']
         },
     ])   .then((answers) => {
           // SWITCH CASE FOR LICENSE BADGE
@@ -134,10 +134,10 @@ inquirer
         case "MIT License": 
             licenseBadge = "https://img.shields.io/badge/License-MIT-brightgreen.svg"
             break;
-        case "BSD 2-Clause 'Simplified License'":
+        case "BSD 2-Clause Simplified License":
             licenseBadge = "https://img.shields.io/badge/License-BSD%202--Clause-orange.svg"
             break;
-        case "'BSD 3-Clause 'New' or 'Revised' License:":
+        case "BSD 3-Clause New / Revised License":
             licenseBadge = "https://img.shields.io/badge/License-BSD%203--Clause-blue.svg"
             break;
         case "Boost Software License 1.0":
@@ -178,10 +178,10 @@ inquirer
         case "MIT License": 
             license = "https://opensource.org/licenses/MIT"
             break;
-        case "BSD 2-Clause 'Simplified License'":
+        case "BSD 2-Clause Simplified License":
             license = "https://opensource.org/licenses/BSD-2-Clause"
             break;
-        case "'BSD 3-Clause 'New' or 'Revised' License:":
+        case "BSD 3-Clause New / Revised License":
             license = "https://opensource.org/licenses/BSD-3-Clause"
             break;
         case "Boost Software License 1.0":
@@ -214,13 +214,24 @@ inquirer
         const readme = createReadMe(answers);
 
         fs.writeFile('README.md', readme, (err) =>
-        err ? console.log(err) : console.log('"It always seems impossible until its done...." README.md created! nice job.'))
+        err ? console.log(err,"Something went wrong, please try again") : console.log('"It always seems impossible until its done...." README.md created! nice job.'))
     })
 
 
 
 
 
+    /* catch(function(error) {
+        if (type==="meal") {
+            $("#mealTitle").text("API Error. Try Again");
+            $("#mealImg").attr("src", "./images/unhappy-burger.jpg");
+            $("#mealImg").attr("alt", "API error");
+        } else if (type==="drink") {
+            $("#drinkTitle").text("API Error. Try Again");
+            $("#drinkImg").attr("src", "./images/unhappy-cocktail.jpg");
+            $("#drinkImg").attr("alt", "API Error");
+        }
+*/
  
 
    
