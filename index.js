@@ -218,20 +218,6 @@ inquirer
     })
 
 
-
-
-
-    /* catch(function(error) {
-        if (type==="meal") {
-            $("#mealTitle").text("API Error. Try Again");
-            $("#mealImg").attr("src", "./images/unhappy-burger.jpg");
-            $("#mealImg").attr("alt", "API error");
-        } else if (type==="drink") {
-            $("#drinkTitle").text("API Error. Try Again");
-            $("#drinkImg").attr("src", "./images/unhappy-cocktail.jpg");
-            $("#drinkImg").attr("alt", "API Error");
-        }
-*/
  
 
    
