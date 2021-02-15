@@ -214,7 +214,7 @@ inquirer
         const readme = createReadMe(answers);
 
         fs.writeFile('README.md', readme, (err) =>
-        err ? console.log(err,"Something went wrong, please try again") : console.log('"It always seems impossible until its done...." README.md created! nice job.'))
+        err ? console.log(err, "Something went wrong, please try again") : console.log('"It always seems impossible until its done...." README.md created! nice job.'))
     })
 
 
