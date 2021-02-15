@@ -3,6 +3,7 @@ const fs = require('fs');
 
 const createReadMe = (answers) => 
 `# ${answers.title} 
+### ![License](${licenseBadge})
 ### ${answers.description}
 # ![ScreenShot](${answers.link})
 # [View the Deployed Application Here](${answers.deployed})
@@ -28,7 +29,7 @@ const createReadMe = (answers) =>
 ### ${answers.testing}
 
 # Usage
-### This application was created by ${answers.contributors}. Feel free to reach out via [email](#email) or open up a GitHub issue, or pull request if there is something you would like to add. 
+### This application was created by ${answers.contributors}. Feel free to reach out via [email](${answers.email}) or open up a GitHub issue, or pull request if there is something you would like to add. 
 
 # Credits
 ### ${answers.credits}
@@ -45,8 +46,8 @@ const createReadMe = (answers) =>
 # Licenses
 ### Copyright (c) ${answers.year} ${answers.contributors}
 ### ${answers.license} 
-### [License](${license})
-### ![License](${licenseBadge})
+### [Licensing Information](${license})
+
 `
 
 // function renderLicenseBadge(${answers.license} ) {
