@@ -45,7 +45,7 @@ const createReadMe = (answers) =>
 
 # Licenses
 ### Copyright (c) ${answers.year} ${answers.contributors}
-### ${answers.license} 
+### [ ${answers.license}] (${license})
 ### [Licensing Information](${license})
 
 `
