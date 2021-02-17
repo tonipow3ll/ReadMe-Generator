@@ -115,7 +115,13 @@ inquirer
         {
             type: 'input',
             name: 'year',
-            message: 'what is the current year, or year this was created?'
+            message: 'what is the current year, or year this was created?',
+            validate: function (year){
+                if (year <= 1900 || isNaN(year)){
+                    return "Please enter a valid year";
+                } 
+                return true; 
+            }
         },
         {
             type: 'list',
