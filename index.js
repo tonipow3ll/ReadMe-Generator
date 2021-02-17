@@ -50,17 +50,18 @@ const createReadMe = (answers) =>
 
 `
 
-// function renderLicenseBadge(${answers.license} ) {
-//     let license = "MIT License"
-    
-// }
-
 inquirer
     .prompt([
         {
             type: 'input',
             name: 'title',
-            message: 'What is this application called?'
+            message: 'Enter this applications name or title',
+            validate: function (title){
+                if (title === null || title === ""){
+                    return "Application title cannot be left blank";
+                } 
+                return true; 
+            }
         },
         {
             type: 'input',
@@ -75,7 +76,13 @@ inquirer
         {
             type: 'input',
             name: 'description',
-            message: 'enter a description of the application'
+            message: 'enter a description of the application',
+            validate: function (description){
+                if (description === null || description === ""){
+                    return "Description cannot be left blank";
+                } 
+                return true; 
+            }
         },
         {
             type: 'input',
@@ -117,8 +124,9 @@ inquirer
             name: 'year',
             message: 'what is the current year, or year this was created?',
             validate: function (year){
+                // /\d{4}$/ <= regex for the same function below 
                 if (year <= 1900 || isNaN(year)){
-                    return "Please enter a valid year";
+                    return "Please enter a valid year, input accepts numbers only";
                 } 
                 return true; 
             }
