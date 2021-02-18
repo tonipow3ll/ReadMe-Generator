@@ -2,7 +2,7 @@
 ### ![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
 ### A 'Read Me' Generator. A user can quickly and easily create a Read Me file for their web based, or command line application. 
 # ![ScreenShot](https://user-images.githubusercontent.com/72999798/108382843-3c639a80-71d7-11eb-8729-f05583a6b331.png)
-## [View application walkthrough video](https://drive.google.com/file/d/1n2zTllyeKf09uCxTGlkpDIbDz8GF6RVv/view?usp=sharing)
+# [View the Walkthrough Video Here](https://drive.google.com/file/d/1n2zTllyeKf09uCxTGlkpDIbDz8GF6RVv/view?usp=sharing)
 
 # Table of Contents
 ### [Installation](#Installation)
@@ -26,14 +26,12 @@
 ### This application was created by Toni Powell. Feel free to reach out via [email](tonipow3ll@gmail.com) or open up a GitHub issue, or pull request if there is something you would like to add. 
 
 # Credits
-### 
+### UNH Full Stack Coding Bootcamp
 
-# Contributors
-### Toni Powell
 
 
 # Contact/ General Questions:
-### [LinkedIn](www.linkedin.com/in/tonipowell13)
+### [LinkedIn](https://www.linkedin.com/in/tonipowell13)
 ### [Email](tonipow3ll@gmail.com)
 ### [GitHub](tonipow3ll.github.io)
 
