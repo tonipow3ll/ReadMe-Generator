@@ -1,8 +1,8 @@
-# s 
-### ![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)
-### a
-# ![ScreenShot](a)
-# [View the Deployed Application Here](a)
+# Read Me Generator 
+### ![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
+### A 'Read Me' Generator. A user can quickly and easily create a Read Me file for their web based, or command line application. 
+# ![ScreenShot](https://user-images.githubusercontent.com/72999798/108382843-3c639a80-71d7-11eb-8729-f05583a6b331.png)
+## [View application walkthrough video](https://drive.google.com/file/d/1n2zTllyeKf09uCxTGlkpDIbDz8GF6RVv/view?usp=sharing)
 
 # Table of Contents
 ### [Installation](#Installation)
@@ -14,31 +14,31 @@
 
 
 # Installation 
-### 1. Clone repository to your local device. 2. Test by opening the index.html file in your browser. 3. If it looks good, it's working right. 
+### Clone repository to your local device, run `npm install` to install any dependencies. To use the application, run `node index.js` in your local machine's terminal.
 
 # Technologies
-### a
+### nodejs, inquirer
 
 # Testing
-### a
+### 
 
 # Usage
-### This application was created by a. Feel free to reach out via [email](a) or open up a GitHub issue, or pull request if there is something you would like to add. 
+### This application was created by Toni Powell. Feel free to reach out via [email](tonipow3ll@gmail.com) or open up a GitHub issue, or pull request if there is something you would like to add. 
 
 # Credits
-### a
+### 
 
 # Contributors
-### a
+### Toni Powell
 
 
 # Contact/ General Questions:
-### [LinkedIn](a)
-### [Email](a)
-### [GitHub](a.github.io)
+### [LinkedIn](www.linkedin.com/in/tonipowell13)
+### [Email](tonipow3ll@gmail.com)
+### [GitHub](tonipow3ll.github.io)
 
 # Licenses
-### Copyright (c) 9999 a
-### [ Apache License 2.0] (https://opensource.org/licenses/Apache-2.0)
-### [Licensing Information](https://opensource.org/licenses/Apache-2.0)
+### Copyright (c) 2021 Toni Powell
+### [ MIT License] (https://opensource.org/licenses/MIT)
+### [Licensing Information](https://opensource.org/licenses/MIT)
 
