@@ -1,8 +1,8 @@
 # Read Me Generator 
 ### ![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
 ### A 'Read Me' Generator. A user can quickly and easily create a Read Me file for their web based, or command line application. 
-# ![ScreenShot](https://user-images.githubusercontent.com/72999798/108382843-3c639a80-71d7-11eb-8729-f05583a6b331.png)
-# [View the Walkthrough Video Here](https://drive.google.com/file/d/1n2zTllyeKf09uCxTGlkpDIbDz8GF6RVv/view?usp=sharing)
+# ![ScreenShot](https://user-images.githubusercontent.com/72999798/108395425-c1ed4780-71e3-11eb-907b-253eb26dc866.png)
+# [View the Walkthrough Video Here](https://drive.google.com/file/d/1WA2Z4HKzhtzKMtDfxk0jBbSyMC40xI3V/view?usp=sharing)
 
 # Table of Contents
 ### [Installation](#Installation)
@@ -37,6 +37,6 @@
 
 # Licenses
 ### Copyright (c) 2021 Toni Powell
-### [ MIT License] (https://opensource.org/licenses/MIT)
+### [MIT License](https://opensource.org/licenses/MIT)
 ### [Licensing Information](https://opensource.org/licenses/MIT)
 
