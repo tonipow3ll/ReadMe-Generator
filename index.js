@@ -18,9 +18,7 @@ const createReadMe = (answers) =>
 
 
 # Installation 
-### Clone repository to your local device
-### Test by opening the index.html file in your browser. If it looks good, it's working right.
-### If it does not work, right-click Inspect console to determine if there is an error. 
+### ${install}
 
 # Technologies
 ### ${answers.technologies}
@@ -85,6 +83,12 @@ inquirer
             }
         },
         {
+            type: 'list',
+            name: 'install',
+            message: 'if this is a command line application - please choose command line, if this is a web based application - please choose web based',
+            choices: ['Command Line Application', 'Web Based Application']
+        },
+        {
             type: 'input',
             name: 'technologies',
             message: 'list any technologies or frameworks you have used'
@@ -138,6 +142,16 @@ inquirer
             choices: ['Apache License 2.0', 'GNU General Public License', 'MIT License', 'BSD 2-Clause Simplified License', 'BSD 3-Clause New / Revised License', 'Boost Software License 1.0', 'Create Commons Zero v1.0 Universal', 'Eclipse Public License', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public LIcense v2.1', 'Mozilla Public License 2.0', 'The Unlicense']
         },
     ])   .then((answers) => {
+    switch (`${answers.install}`) {
+        case 'Command Line Application':
+            install = "Clone repository to your local device, run `npm install` to install any dependencies. To use the application, run `node index.js` in your local machine's terminal."
+            break;
+        case 'Web Based Application':
+            install = " Clone repository to your local device. Test by opening the index.html file in your browser. If it looks good, it's working right. "
+            break;
+
+            default: "no installation information available"
+        }
           // SWITCH CASE FOR LICENSE BADGE
     switch (`${answers.license}`) {
         case 'Apache License 2.0':
@@ -225,6 +239,8 @@ inquirer
 
             default: "no license information available"
     }
+
+    
         const readme = createReadMe(answers);
 
         fs.writeFile('README.md', readme, (err) =>
