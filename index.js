@@ -38,7 +38,7 @@ const createReadMe = (answers) =>
 ### ${answers.contributors}
 
 
-# Contact:
+# Contact/ General Questions:
 ### [LinkedIn](${answers.linkedin})
 ### [Email](${answers.email})
 ### [GitHub](${answers.github}.github.io)
