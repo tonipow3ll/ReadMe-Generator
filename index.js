@@ -6,7 +6,7 @@ const createReadMe = (answers) =>
 ### ![License](${licenseBadge})
 ### ${answers.description}
 # ![ScreenShot](${answers.link})
-# [View the Deployed Application Here](${answers.deployed})
+### [View the Deployed Application Here](${answers.deployed})
 
 # Table of Contents
 ### [Installation](#Installation)
@@ -39,7 +39,7 @@ const createReadMe = (answers) =>
 # Contact/ General Questions:
 ### [LinkedIn](${answers.linkedin})
 ### [Email](${answers.email})
-### [GitHub](${answers.github}.github.io)
+### [GitHub](https://github.com/${answers.github})
 
 # Licenses
 ### Copyright (c) ${answers.year} ${answers.contributors}
@@ -243,7 +243,7 @@ inquirer
     
         const readme = createReadMe(answers);
 
-        fs.writeFile('README.md', readme, (err) =>
+        fs.writeFile('./final/README.md', readme, (err) =>
         err ? console.log(err, "Something went wrong, please try again") : console.log('"It always seems impossible until its done...." README.md created! nice job.'))
     })
 
