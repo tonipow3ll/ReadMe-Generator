@@ -11,29 +11,23 @@ const createReadMe = (answers) =>
 # Table of Contents
 ### [Installation](#Installation)
 ### [Technologies](#Technologies)
-### [Testing](#Testing)
-### [Contributors](#Contributors)
+### [Future Development](#Future-Development)
 ### [Contact](#Contact)
 ### [Licenses](#Licenses)
 
 
 # Installation 
-### ${install}
+${install}
 
 # Technologies
-### ${answers.technologies}
+${answers.technologies}
 
-# Testing
-### ${answers.testing}
+# Future-Development
+${answers.futuredev}
 
-# Usage
-### This application was created by ${answers.contributors}. Feel free to reach out via [email](${answers.email}) or open up a GitHub issue, or pull request if there is something you would like to add. 
 
 # Credits
-### ${answers.credits}
-
-# Contributors
-### ${answers.contributors}
+${answers.credits}
 
 
 # Contact/ General Questions:
@@ -95,13 +89,8 @@ inquirer
         },
         {
             type: 'input',
-            name: 'contributors',
-            message: 'list contributors (if any) that may have helped with this applications development. If none - please enter your name. '
-        },
-        {
-            type: 'input',
-            name: 'testing',
-            message: 'any special notes on testing you would like to add? If not, hit enter to leave blank. '
+            name: 'futuredev',
+            message: 'Enter in any notes about future development / features '
         },
         {
             type: 'input',
